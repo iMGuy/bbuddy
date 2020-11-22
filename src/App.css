@@ -1,0 +1,223 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #fff 0%, #ccc 100%);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(34, 17, 56);
+  color: #fff;
+}
+
+.nav-links {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 5px 0;
+}
+
+.nav-links > a {
+  text-decoration: none;
+}
+
+.nav-links > a:hover {
+  text-decoration: underline;
+}
+.title{
+  padding: 30px 0 0;
+}
+
+.search-row {
+  flex-wrap: wrap;
+  width: 65%;
+  margin: 40px auto;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+form {
+  display: flex;
+}
+
+
+.search-input {
+  border: none;
+  background: #E9E9E9;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0.7em 0.75em;
+	border: none;
+	font-size: 1.1em;
+	text-decoration: none;
+	line-height: normal;
+	max-height: 3em;
+  flex: 2 0 250px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.Search-butten {
+  flex: 1 0 90px;
+  max-height: 3em;
+  font-size: 1.1em;
+  letter-spacing: .2em;
+	background: rgb(172, 213, 230);
+  color: rgb(65, 65, 65);
+  border: none;
+  padding: 0.7em 0.75em;
+  cursor: pointer;
+  border-radius: 0px 10px 10px 0px;
+}
+.Search-butten:hover {
+  background: skyblue;
+}
+
+.modal {
+  font-size: 12px;
+  background: #fff;
+  border: 1px rgb(155, 155, 155) solid;
+  padding: 15px;
+}
+.modal > .header {
+width: 100%;
+font-size: 18px;
+text-align: center;
+font-weight: bold;
+}
+
+.modal > .tagline {
+width: 100%;
+font-size: 14px;
+text-align: center;
+}
+.modal > .content {
+width: 80vh;
+padding: 15px 15px 15px 15px;
+}
+.modal > .actions {
+width: 100%;
+padding: 10px 5px;
+margin: auto;
+text-align: center;
+}
+
+.modal > .action-button {
+width: 30%;
+padding: 10px 5px;
+margin: auto;
+text-align: center;
+}
+
+.modal > .close {
+cursor: pointer;
+position: absolute;
+display: block;
+padding: 2px 5px;
+line-height: 20px;
+right: -10px;
+top: -10px;
+font-size: 24px;
+background: #ffffff;
+border-radius: 18px;
+border: 1px solid #cfcece;
+}
+
+.actions > button {
+cursor: pointer;
+line-height: 30px;
+padding: 2px 15px;
+margin: 0 20px;
+background: rgb(172, 213, 230);
+border: 1px solid #cfcece;
+border-radius: 5px 5px 5px 5px;
+}
+.modal > .beer-img {
+max-width: 100px;
+height: auto;
+}
+
+.popup-subtitles {
+font-weight: bold;
+}
+
+.beer-cards{
+display: flex;
+flex-wrap: wrap;
+}
+
+.beer-card {
+padding: 2%;
+margin: 1%;
+flex: 1 0 17%;
+display: flex;  
+flex-direction: column;
+border: 1px #cccccc solid;
+max-width: 17%;
+}
+
+.beer-card-title {
+flex-basis: 100%;
+}
+
+.beer-card-title > h3 {
+font-size: 0.8em;
+}
+
+.beer-card-image img {
+max-height: 200px;
+}
+
+.beer-card-action {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+padding: 10px 0
+}
+
+.add-to-favorites {
+flex-grow: 1;
+flex-basis: 25%;
+display: flex;
+justify-content: center;
+}
+
+.more-detailes {
+  flex-grow: 1;
+  flex-basis: 25%;
+  display: flex;
+  justify-content: center;
+} 
+
+.rank-beer{
+  flex-grow: 1;
+  flex-basis: 25%;
+  display: flex;
+  justify-content: center;
+} 
+
+.favorites-button, .button-info {
+border: none;
+background-color: transparent;
+cursor: pointer;
+font-size: 20px;
+}
+
+.favorites-button-on {
+  color: rgb(194, 44, 44);
+}
+
+.favorites-button-off {
+  color: rgb(0, 0, 0);
+}
+
+
+
+.hidebutton {
+  visibility: hidden;
+}
